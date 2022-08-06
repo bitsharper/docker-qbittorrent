@@ -6,5 +6,5 @@ Dockerfile to deploy qbittorrent container. It allows to set WebUI password duri
 docker build . -t qbittorrent/debian --build-arg QBIT_WEBUI_PASS=password
 
 docker run -d --name qbittorrent -p 8080:8080 -p 6881:6881 -p 6881:6881/udp \
-      --mount type=bind,source=/mnt/sata/netdrive/tmp,target=/opt/qbittorrent/download \
+      --mount type=bind,source=/tmp,target=/opt/qbittorrent/download \
       --restart=unless-stopped qbittorrent/debian
