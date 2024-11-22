@@ -1,5 +1,6 @@
 ## Description
-Dockerfile to deploy qbittorrent container. It allows to set WebUI password during container build to avoid using defaul qbittorrent adminadmin password. If password not specified during build stage it will be generated and output to the console during the container build stage. 
+Dockerfile to deploy qbittorrent container. It allows to set WebUI password during container build to avoid using defaul qbittorrent adminadmin password. 
+If a password wasn't set during build stage a random password will be generated and output to the console during the container build stage. 
 
 ## Container build and run example
 
